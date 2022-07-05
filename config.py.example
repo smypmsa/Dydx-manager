@@ -1,0 +1,57 @@
+HOST = "https://api.dydx.exchange"
+PARAMETERS = {"ORDERS_LIMIT": 2, "POSITION_SIZE": "0.1"}
+SELL_MIN_PRICE = "36000"  # BTC
+BUY_MAX_PRICE = "49000"  # BTC
+IMR = 0.05  # Initial margin
+MMR = 0.03  # Maintenance margin
+
+# SKIP WALLETS
+SKIP_WALLETS = ["V_1", "V_2", "V_3", "V_6"]
+
+# WALLET PAIRS USED TO REBALANCE MARGIN
+WALLET_PAIRS = [
+    ['LEDGER_1A', 'LEDGER_2A'],
+    ['LEDGER_3A', 'LEDGER_4A'],
+    ['LEDGER_5A', 'LEDGER_6A']
+]
+
+# TELEGRAM
+BOT_ID = ""
+INTERNAL_CHATID_DYDX = ""
+
+MARKET_BTC = {'baseline_position_size': 9,
+              'incremental_position_size': 1.5,
+              'max_position_size': 170,
+              'imf': 0.01}
+
+MARKET_ETH = {'baseline_position_size': 140,
+              'incremental_position_size': 28,
+              'max_position_size': 2820,
+              'imf': 0.01}
+
+WALLETS = [
+    {"wallet_name": "LEDGER_1A",
+     "data": {
+            "DEFAULT_ETHEREUM_ADDRESS": "",
+            "API_CREDENTIALS": {
+                "key": "",
+                "secret": "",
+                "passphrase": ""
+            },
+            "STARK_PRIVATE_KEY": "",
+            "STARK_PUBLIC_KEY": "",
+            "STARK_PUBLIC_KEY_Y_COORDINATE": ""
+    }},
+    {"wallet_name": "LEDGER_2A",
+     "data": {
+            "DEFAULT_ETHEREUM_ADDRESS": "",
+            "API_CREDENTIALS": {
+                "key": "",
+                "secret": "",
+                "passphrase": ""
+            },
+            "STARK_PRIVATE_KEY": "",
+            "STARK_PUBLIC_KEY": "",
+            "STARK_PUBLIC_KEY_Y_COORDINATE": ""
+    }}
+    ]
